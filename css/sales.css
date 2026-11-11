@@ -1,0 +1,47 @@
+/* עיצוב לדפי המכירות */
+
+.sale-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.sale-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--standard-gap);
+    padding: 24px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.sale-details h2 {
+    margin-top: 0;
+    color: var(--main-color);
+}
+
+.sale-details p {
+    margin: 8px 0;
+}
+
+.sale-status {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #d9e3fd;
+    color: var(--main-color);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .sale-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sale-card .main-button {
+        text-align: center;
+    }
+}

@@ -1,0 +1,80 @@
+/* עיצוב לדפי המוצרים וההזמנה */
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--standard-gap);
+    margin: 25px 0;
+}
+
+.product-card {
+    flex: 1 1 220px;
+    min-width: 0;
+    padding: 18px;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px #173c7015;
+}
+
+.product-image {
+    filter: brightness(100%);
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+    background-color: #ffffff;
+}
+
+.product-image:hover {
+    filter: brightness(90%);
+}
+
+.product-card h2 {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.product-card label {
+    display: block;
+    margin-top: 12px;
+}
+
+.product-card input {
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+}
+
+.order-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.order-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.order-total {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+@media (max-width: 600px) {
+    .product-card {
+        flex-basis: 100%;
+    }
+
+    .order-list li {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,47 @@
+/* עיצוב לדף אישור השליחה בלבד */
+
+.success-card {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 35px 25px;
+    text-align: center;
+    animation: appear 0.5s ease-out;
+}
+
+.success-card h1 {
+    color: var(--main-color);
+}
+
+.success-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #e0f3e5;
+    color: #246b38;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+/* האנימציה מוגדרת גם בקובץ דף הבית, לכן היא מוגדרת כאן
+   כדי שקובץ האישור יוכל לפעול גם בלעדיו. */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .success-card {
+        padding: 25px 16px;
+    }
+}

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הרשמה למערכת - משנת יוסף</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="../index.html" class="logo-link">
+            <img src="../assets/images/logo.png" alt="משנת יוסף" class="logo">
+        </a>
+    </header>
+
+    <nav class="main-nav">
+        <a href="../index.html">דף הבית</a>
+        <a href="sales.html">מכירות פתוחות</a>
+        <a href="pickup.html">הזמנות לאיסוף</a>
+        <a href="register.html" class="active">הרשמה למערכת</a>
+        <a href="about.html">אודות</a>
+    </nav>
+
+    <main class="home-main">
+        <h1>הרשמה למערכת</h1>
+        <p>מלאו את הפרטים הבאים כדי להרשם.</p>
+
+        <form class="registration-form"
+              action="success.html" method="get">
+
+            <div class="form-field">
+                <label for="fullname">שם מלא:</label>
+                <input type="text" id="fullname" name="fullname"
+                       autocomplete="name" required
+                       minlength="2" maxlength="60">
+            </div>
+
+            <div class="form-field">
+                <label for="email">כתובת דוא"ל:</label>
+                <input type="email" id="email" name="email"
+                       autocomplete="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="phone">מספר טלפון:</label>
+                <input type="tel" id="phone" name="phone"
+                       autocomplete="tel" required
+                       pattern="[0-9\-]{9,12}"
+                       title="הכניסו מספר טלפון עם ספרות ומקפים בלבד">
+            </div>
+
+
+
+            <div class="form-field">
+                <label for="city">עיר מגורים:</label>
+                <input type="text" id="city" name="city"
+                       autocomplete="address-level2" required>
+            </div>
+<div class="form-field">
+    <label for="station">תחנת איסוף:</label>
+    <select id="station" name="station" required>
+        <option value="">בחרו תחנה</option>
+        <option value="bnei-brak">בני ברק — רחוב רבי עקיבא 50</option>
+        <option value="jerusalem">ירושלים — רחוב ירמיהו 20</option>
+        <option value="beit-shemesh">בית שמש — רחוב נהר הירדן 12</option>
+        <option value="modiin-illit">מודיעין עילית — רחוב אבני נזר 5</option>
+        <option value="ashdod">אשדוד — רחוב רבי מאיר בעל הנס 8</option>
+    </select>
+</div>
+            
+
+            <div class="form-actions">
+                <button type="submit" class="main-button">
+                    שליחת טופס הרשמה
+                </button>
+
+                <button type="reset" class="reset-button">
+                    איפוס הטופס
+                </button>
+            </div>
+
+        </form>
+
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© כל הזכויות שמורות — פרויקט לימודי</p>
+        <a href="about.html">אודות</a>
+    </footer>
+
+</body>
+</html>

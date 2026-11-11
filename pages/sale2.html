@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מכירת מוצרי מזון - משנת יוסף</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="../index.html" class="logo-link">
+            <img src="../assets/images/logo.png" alt="משנת יוסף" class="logo">
+        </a>
+    </header>
+
+    <nav class="main-nav">
+        <a href="../index.html">דף הבית</a>
+        <a href="sales.html" class="active">מכירות פתוחות</a>
+        <a href="pickup.html">הזמנות לאיסוף</a>
+        <a href="register.html">הרשמה למערכת</a>
+        <a href="about.html">אודות</a>
+    </nav>
+
+    <main class="home-main">
+        <h1>מכירת מוצרי מזון</h1>
+        <p>בחרו את המוצרים ואת הכמויות הרצויות.</p>
+
+        <form action="success.html" method="get">
+            <section class="product-grid">
+
+                <article class="product-card">
+                    <img src="../assets/images/rice.png"
+                         alt="אורז" class="product-image">
+                    <h2>אורז</h2>
+                    <p>מחיר לאריזה: 12 ₪</p>
+                    <label for="rice">כמות אריזות:</label>
+                    <input id="rice" name="rice"
+                           type="number" min="0" max="50" value="0">
+                </article>
+
+                <article class="product-card">
+                    <img src="../assets/images/oil.png"
+                         alt="שמן" class="product-image">
+                    <h2>שמן</h2>
+                    <p>מחיר לבקבוק: 9 ₪</p>
+                    <label for="oil">כמות בקבוקים:</label>
+                    <input id="oil" name="oil"
+                           type="number" min="0" max="50" value="0">
+                </article>
+
+                <article class="product-card">
+                    <img src="../assets/images/no_image.png"
+                         alt="סוכר" class="product-image">
+                    <h2>סוכר</h2>
+                    <p>מחיר לאריזה: 5 ₪</p>
+                    <label for="sugar">כמות אריזות:</label>
+                    <input id="sugar" name="sugar"
+                           type="number" min="0" max="50" value="0">
+                </article>
+
+            </section>
+
+            <button type="submit" class="main-button">
+שליחת הזמנה           
+ </button>
+            <button type="reset" class="reset-button">
+                איפוס כמויות
+            </button>
+        </form>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© כל הזכויות שמורות — פרויקט לימודי</p>
+        <a href="about.html">אודות</a>
+    </footer>
+
+</body>
+</html>

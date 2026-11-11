@@ -1,0 +1,68 @@
+/* עיצוב לדף הטופס */
+
+.registration-form {
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--corner-radius);
+}
+
+.form-field {
+    margin-bottom: 18px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+    width: 100%;
+    padding: 11px;
+    font: inherit;
+    color: var(--text-color);
+    background: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.form-field select:focus,
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 1px;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.reset-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    font: inherit;
+    background-color: #eeeeF2;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background-color: #ddddE5;
+}
+
+@media (max-width: 600px) {
+    .registration-form {
+        padding: 16px;
+    }
+}
